@@ -17,8 +17,12 @@ import Login from "./comporents/auth/Login";
 import Register from "./comporents/auth/Register";
 import Account from "./pages/Account";
 import ProfileLayout from "./layout/ProfileLayout";
-import UserProfile from "./comporents/account/profil";
-import ProfilePage from "./account/page/ProfilePage";
+import ProfilePage from "./pages/ProfilePage";
+import Table from "./comporents/general/Table";
+import Reservation from "./comporents/account/reservation/Reservation";
+import ReservationFormPage from "./pages/ReservationFormPage";
+import ReservationPage from "./pages/ReservationPage";
+import AccountRoomPage from "./pages/AccountRoomPage";
  function App() {
 
   return (
@@ -70,6 +74,14 @@ import ProfilePage from "./account/page/ProfilePage";
                 <Routes>
 
                 <Route path="/profil" element={<ProfilePage />} />
+                <Route path="/reservation" element={<ReservationPage />} />
+                <Route path="/reservationform" element={<ReservationFormPage />} />
+                <Route path="/room" element={<AccountRoomPage />} />
+
+
+
+                <Route path="/profils" element={<Table/>} />
+
 
                 {/* <Route path="/profil" element={<UserProfile />} /> */}
 
